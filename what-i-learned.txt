@@ -21,3 +21,14 @@ to reference it as an image in the future.
 OOP - In the __init__ self. can seem ambiguous upon setup. If you write self. it just means you can access
 it from anywhere in the code. I created some variables without 'self.' and that's because that's the only location I want to
 use or reference is.
+
+5.
+canvas.createtext() has a param width= in which you can set it to be less than the screen to prevent text flowing off screen.
+
+6.
+TYPE HINTING!
+Extremely helpful as project complexity grows. I can build in expected result so if myself or another dev begins to
+deviate they will be given a hint before breaking the program.
+Format def greeting(name: str) -> str:
+So this will take a string and the expected return is a string.
+
