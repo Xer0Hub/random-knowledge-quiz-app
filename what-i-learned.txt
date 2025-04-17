@@ -1,0 +1,23 @@
+WHAT I LEARNED IN FROM THIS PROJECT
+
+1.
+Sometimes using APIs and importing their data, the data may not be processed correctly and still
+have HTML artifacts or other encode/decode pieces present. I had to import html to escape the
+html encoding that was left in the questions I was pulling to the quiz.
+
+A lesson can be learned here. If imported data displays artifacts, import or focus on what
+type of data that is, why it's there, and how to decode or sanitize it.
+
+2.
+Tkinter generally always  requires the Canvas() method. The canvas allows you to stack things on it
+and create the picture of the screen. In the past I've mistaken the Label() as the do-all. Canvas() also
+requires the dimensions of placement before any other params. Example: Canvas(150, 125).
+
+3.
+Again a repeated lesson, but you must create a variable then place PhotoImage(file=) inside the var
+to reference it as an image in the future.
+
+4.
+OOP - In the __init__ self. can seem ambiguous upon setup. If you write self. it just means you can access
+it from anywhere in the code. I created some variables without 'self.' and that's because that's the only location I want to
+use or reference is.
